@@ -21,6 +21,7 @@ System.config({
     "react-dom": "npm:react-dom@0.14.6",
     "react-redux": "npm:react-redux@4.0.6",
     "redux": "npm:redux@3.0.5",
+    "reselect": "npm:reselect@2.0.2",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },

@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createStore } from 'redux'
-import { Provider, connect } from 'react-redux'
+import { createStore } from 'redux';
+import { Provider, connect } from 'react-redux';
+
+import { createSelector } from 'reselect';
 
 const defaultState = { val: 1 };
 const reducer = (state = defaultState, action) => Object.assign({}, state, { val: state.val + 1 });
