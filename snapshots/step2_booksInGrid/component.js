@@ -21,11 +21,11 @@ class Main extends React.Component {
                 <div>{'Value: ' + this.props.value} <button onClick={() => this.increment()}>+</button><button onClick={() => this.decrement()}>-</button></div>
                 <table>
                     <thead>
-                        <tr>
-                            <th>Title</th>
-                            <th>Author</th>
-                            <th>Subjects</th>
-                        </tr>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Subjects</th>
+                    </tr>
                     </thead>
                     <tbody>
                     {
