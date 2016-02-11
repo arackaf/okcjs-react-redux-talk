@@ -33,7 +33,7 @@ class Main extends React.Component {
                             <tr>
                                 <td>{b.title}</td>
                                 <td>{b.author}</td>
-                                <td>{b.subjectsDisplay.join(', ')}</td>
+                                <td><ul>{b.subjects.map(s => <li>{s.name}</li>)}</ul></td>
                             </tr>
                         )
                     }
