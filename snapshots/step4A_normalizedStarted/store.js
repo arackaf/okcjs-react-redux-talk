@@ -6,6 +6,7 @@ const initialState = {
     subjects: {}
 };
 
+//REMEMBER - THIS WON'T RUN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 function reducer(state = initialState, action){
     switch(action.type){
         case 'INCREMENT':
