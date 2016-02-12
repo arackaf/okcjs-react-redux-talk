@@ -7,6 +7,8 @@ const initialState = {
 };
 
 //REMEMBER - THIS WON'T RUN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//Next step has selector
+
 function reducer(state = initialState, action){
     switch(action.type){
         case 'INCREMENT':

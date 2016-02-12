@@ -6,6 +6,10 @@ const initialState = {
     subjects: []
 };
 
+//DON'T RUN THIS - books will fail without subjects
+
+//DON'T FORGET TO MENTION EDITING SUBJECT POTENTIAL PROBLEM
+
 function reducer(state = initialState, action){
     switch(action.type){
         case 'INCREMENT':
@@ -13,17 +17,12 @@ function reducer(state = initialState, action){
         case 'DECREMENT':
             return Object.assign({}, state, { value: state.value - 1 });
         case 'BOOKS_LOADED':
-            return Object.assign({}, state, { books: loadSubjectsIntoBooks(action.books, state.subjects) });
+            return Object.assign({}, state, { books: action.books });
         case 'SUBJECTS_LOADED':
             return Object.assign({}, state, { subjects: action.subjects });
         case 'TOGGLE_BOOK':
-            let newBooks = state.books.concat();
-            let bookToUpdate = newBooks.find(b => b._id == action._id);
-            let index = newBooks.indexOf(bookToUpdate);
-
-            newBooks[index] = Object.assign(bookToUpdate, { selected: !bookToUpdate.selected });
-
-            return Object.assign({}, state, { books: newBooks });
+            //TODO: implement
+            return state;
     }
     return state;
 }
