@@ -24,10 +24,7 @@ function loadSubjectsIntoBooks(books, subjects){
     let subjectsHash = {};
     subjects.forEach(s => subjectsHash[s._id] = s);
 
-    books.forEach(b => {
-        b.subjectsDisplay = [];
-        b.subjects = b.subjects.map(_id => subjectsHash[_id]);
-    });
+    books.forEach(b => b.subjects = b.subjects.map(_id => subjectsHash[_id]));
 
     return books;
 }

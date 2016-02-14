@@ -18,7 +18,7 @@ class Main extends React.Component {
     }
     toggleBook(_id){
         this.props.dispatch({ type: 'TOGGLE_BOOK', _id })
-     }
+    }
     render(){
         return (
             <div>
