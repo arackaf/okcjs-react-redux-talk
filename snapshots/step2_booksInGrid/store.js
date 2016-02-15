@@ -13,7 +13,7 @@ function reducer(state = initialState, action){
         case 'DECREMENT':
             return Object.assign({}, state, { value: state.value - 1 });
         case 'BOOKS_LOADED':
-            return Object.assign({}, state, { books: loadSubjectsIntoBooks(action.books, state.subjects) });
+            return Object.assign({}, state, { books: action.books });
         case 'SUBJECTS_LOADED':
             return Object.assign({}, state, { subjects: action.subjects });
     }
