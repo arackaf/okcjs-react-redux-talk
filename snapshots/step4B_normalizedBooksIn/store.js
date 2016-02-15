@@ -32,7 +32,7 @@ export function selector(state){
     let books = Object.keys(state.books).map(_id => ({ ...state.books[_id] }));
     books.forEach(b => b.subjects = b.subjects.map(_id => state.subjects[_id]));
 
-    let subjects = Object.keys(state.subjects).map(_id => state.subjects[_id]);
+    let subjects = Object.keys(state.subjects).map(_id => ({ ...state.subjects[_id] }));
 
     return Object.assign({}, state, { books, subjects });
 }
