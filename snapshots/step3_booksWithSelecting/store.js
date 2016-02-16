@@ -6,8 +6,6 @@ const initialState = {
     subjects: []
 };
 
-//DON'T RUN THIS - books will fail without subjects
-
 //DON'T FORGET TO MENTION EDITING SUBJECT POTENTIAL PROBLEM
 
 function reducer(state = initialState, action){
