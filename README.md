@@ -7,9 +7,9 @@ Clone it (or just download the zip).
 
 Install jspm globally if it's not already  (npm install -g jspm)
 
-Navigate to the root directory and type jspm install
+Navigate to the root directory (of my repo you cloned) and type jspm install
 
-Open the project solution in Visual Studio and run it.  That should be all.
+Open the project's solution file in Visual Studio and run it.  That should be all.
 
 Play around with it and have fun.  The snapshots folder should have the state and component as they exist in various stages of the demo.  By default it should open to the very last stage (which I didn't quite get to because of time).  
 
